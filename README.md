@@ -31,7 +31,7 @@ php artisan migrate
 php artisan serve
 ```
 + access `http://127.0.0.1:8000/` on browser OK!
-> ⚠️WARNING⚠️: need run `run dev` & `migrate` + access `127.0.0.1` before go to AWS!
+> ⚠️WARNING!!!⚠️: need run `run dev` & `migrate` + access `127.0.0.1` before go to AWS!
 
 ## codecommit
 + name=`dtq_codecommit_blog`
@@ -47,6 +47,7 @@ git push -u origin master # if ERR use `git push -f origin master`
 ## eb
 + name=`dtq-eb-blog`
 + choose platform `PHP8 Linux2` (nginx): MUST map with `composer.json > "php": "^7.x|^8.0",`
+> ⚠️WARNING!!!⚠️: can NOT edit after created
 + Configuration >
 + 1. edit `Software` > Document root=`/public`
 + 2. edit `DB` > `mysql` > username=`admin` + PW=`xxx`
