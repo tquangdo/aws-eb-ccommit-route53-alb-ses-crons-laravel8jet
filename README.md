@@ -282,6 +282,8 @@ php artisan backup:run --only-db
     'endpoint' => array_key_exists('AWS_ENDPOINT', $_SERVER) ? $_SERVER['AWS_ENDPOINT'] : env('AWS_ENDPOINT'),
 ],
 ```
+
+## crons
 + create `.ebextensions/cronjob.config`
 + edit `app/Console/Kernel.php`:
 ```php
