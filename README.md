@@ -1,9 +1,9 @@
-# aws-eb-cicd-cwatch-ses-crons-laravel8jet 🐳
+# aws-eb-ccommit-route53-alb-ses-crons-laravel8jet 🐳
 
-![Stars](https://img.shields.io/github/stars/tquangdo/aws-eb-cicd-cwatch-ses-crons-laravel8jet?color=f05340)
-![Issues](https://img.shields.io/github/issues/tquangdo/aws-eb-cicd-cwatch-ses-crons-laravel8jet?color=f05340)
-![Forks](https://img.shields.io/github/forks/tquangdo/aws-eb-cicd-cwatch-ses-crons-laravel8jet?color=f05340)
-[![Report an issue](https://img.shields.io/badge/Support-Issues-green)](https://github.com/tquangdo/aws-eb-cicd-cwatch-ses-crons-laravel8jet/issues/new)
+![Stars](https://img.shields.io/github/stars/tquangdo/aws-eb-ccommit-route53-alb-ses-crons-laravel8jet?color=f05340)
+![Issues](https://img.shields.io/github/issues/tquangdo/aws-eb-ccommit-route53-alb-ses-crons-laravel8jet?color=f05340)
+![Forks](https://img.shields.io/github/forks/tquangdo/aws-eb-ccommit-route53-alb-ses-crons-laravel8jet?color=f05340)
+[![Report an issue](https://img.shields.io/badge/Support-Issues-green)](https://github.com/tquangdo/aws-eb-ccommit-route53-alb-ses-crons-laravel8jet/issues/new)
 
 ![overview_](screenshots/overview_.png)
 
@@ -14,7 +14,7 @@
 ```shell
 php -v -> PHP 8.0.14
 composer -v -> Composer version 2.2.4
-laravel new aws-eb-cicd-cwatch-ses-crons-laravel8jet --jet
+laravel new aws-eb-ccommit-route53-alb-ses-crons-laravel8jet --jet
 ->
     |     |         |
     |,---.|--- ,---.|--- ,---.,---.,---.,-.-.
