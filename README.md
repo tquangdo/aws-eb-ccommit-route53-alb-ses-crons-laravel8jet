@@ -79,6 +79,14 @@ git push -u origin master # if ERR use `git push -f origin master`
 + access eb's URL on browser > register > login > OK!
 ![ebresult](screenshots/ebresult.png)
 
+## code pipeline
++ create `DTQPipelineBlog`
++ step: `add src stage`
+![pline1](screenshots/pline1.png)
++ step: `add build stage`: skip
++ step: `add deploy stage`
+![pline2](screenshots/pline2.png)
+
 ## cwatch
 ```shell
 composer require maxbanton/cwh
@@ -288,4 +296,9 @@ php artisan backup:run --only-db
 + edit `app/Console/Kernel.php`:
 ```php
 $schedule->command('backup:run --only-db')->dailyAt('4:00');
+```
+
+## delete AWS services & resources
+```shell
+./del_aws_resource.sh
 ```
