@@ -20,14 +20,14 @@ done
 
 # ~~~~~~~~~~~ 4) Role & Policy ~~~~~~~~~~~
 ## ~~~~~~~~~~~ ROLE!!!
-# roles=$(aws iam list-roles --query 'Roles[?contains(RoleName, `DTQ`)].RoleName' --output text) # replace "DTQ" <=> "<ROLE_NAME>"
-# for role in $roles; do
-#   policies=$(aws iam list-attached-role-policies --role-name=$role --query AttachedPolicies[*][PolicyArn] --output text)
-#   for policy_arn in $policies; do
-#     aws iam detach-role-policy --policy-arn $policy_arn --role-name $role
-#   done
-#   aws iam delete-role --role-name $role
-# done
+roles=$(aws iam list-roles --query 'Roles[?contains(RoleName, `DTQ`)].RoleName' --output text) # replace "DTQ" <=> "<ROLE_NAME>"
+for role in $roles; do
+  policies=$(aws iam list-attached-role-policies --role-name=$role --query AttachedPolicies[*][PolicyArn] --output text)
+  for policy_arn in $policies; do
+    aws iam detach-role-policy --policy-arn $policy_arn --role-name $role
+  done
+  aws iam delete-role --role-name $role
+done
 
 ## IF ERR="Cannot delete entity, must remove roles from instance profile first"!!!
 # aws iam remove-role-from-instance-profile --instance-profile-name $(aws iam list-instance-profiles-for-role --role-name aws-elasticbeanstalk-ec2-role --query 'InstanceProfiles[*].InstanceProfileName' --output text) --role-name <ROLE_NAME>
