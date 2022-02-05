@@ -5,7 +5,7 @@
 ![Forks](https://img.shields.io/github/forks/tquangdo/aws-eb-ccommit-route53-alb-ses-crons-laravel8jet?color=f05340)
 [![Report an issue](https://img.shields.io/badge/Support-Issues-green)](https://github.com/tquangdo/aws-eb-ccommit-route53-alb-ses-crons-laravel8jet/issues/new)
 
-![overview_](screenshots/overview_.png)
+![detail](screenshots/detail.png)
 
 ## reference
 [youtube](https://www.youtube.com/watch?v=KtpiF3SUCkA)
