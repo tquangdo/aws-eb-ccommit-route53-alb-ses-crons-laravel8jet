@@ -174,11 +174,13 @@ git push -u origin master # if ERR use `git push -f origin master`
 
 ## SES
 1. ### config
-    + Account dashboard > click `Create SMTP credentials` > IAM User Name=`DTQ_SES_TEST_DELETE` > copy paste to `.env`: `MAIL_USERNAME` & `MAIL_PASSWORD`
-    + Verified identities > Create identity:
-    + 1. Identity type=`Email`
-    + 2. Email=`email@gmail.com`
-    + check inbox in `email@gmail.com` > click verify URL > Identity status=`Verified`
+    1. #### SMTP
+        + Account dashboard > click `Create SMTP credentials` > IAM User Name=`DTQ_SES_TEST_DELETE` > copy paste to `.env`: `MAIL_USERNAME` & `MAIL_PASSWORD`
+    1. #### email
+        + Verified identities > Create identity:
+        + 1. Identity type=`Email`
+        + 2. Email=`email@gmail.com`
+        + check inbox in `email@gmail.com` > click verify URL > Identity status=`Verified`
 1. ### local
     + edit `.env` & eb `dtq-eb-blog` > Configuration > edit `Software`:
     ```shell
